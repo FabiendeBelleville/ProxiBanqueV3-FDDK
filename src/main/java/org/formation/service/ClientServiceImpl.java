@@ -1,0 +1,42 @@
+package org.formation.service;
+
+import java.util.List;
+
+import org.formation.dao.ClientDao;
+import org.formation.model.Client;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("clientService")
+public class ClientServiceImpl implements IClientService {
+	@Autowired
+	private ClientDao clientDao;
+
+	@Override
+	public void createClient(Client c) {
+		clientDao.save(c);
+	}
+
+	@Override
+	public Client findById(String id) {
+		Integer idInt = Integer.valueOf(id);
+		return clientDao.findById(idInt).get();
+	}
+
+	@Override
+	public List<Client> findAll() {
+		return clientDao.findAll();
+	}
+
+	@Override
+	public void updateClient(Client c) {
+		clientDao.save(c);
+	}
+
+	@Override
+	public Client deleteClient(Client c) {
+		clientDao.delete(c);
+		return c;
+	}
+
+}
