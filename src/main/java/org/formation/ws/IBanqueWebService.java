@@ -38,8 +38,5 @@ public interface IBanqueWebService {
 	@Path("/clients/{id}/")
 	public Client deleteClient(Client c);
 	
-	//verbe supprimer client
-	
-	// verbe put sert à faire le virement et la mise à jour du client
 
 }
