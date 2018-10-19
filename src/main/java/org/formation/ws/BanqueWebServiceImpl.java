@@ -59,4 +59,9 @@ public class BanqueWebServiceImpl implements IBanqueWebService {
 		conseillerService.createConseiller(c);
 	}
 
+	@Override
+	public Conseiller findConseillerById(String id) {
+		return conseillerService.findConseillerById(id);
+	}
+
 }

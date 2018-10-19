@@ -120,13 +120,13 @@ public class Client {
 		this.ville = ville;
 	}
 
-//	public Conseiller getConseiller() {
-//		return conseiller;
-//	}
-//
-//	public void setConseiller(Conseiller conseiller) {
-//		this.conseiller = conseiller;
-//	}
+	public Conseiller getConseiller() {
+		return conseiller;
+	}
+
+	public void setConseiller(Conseiller conseiller) {
+		this.conseiller = conseiller;
+	}
 
 	public CompteCourant getCompteCourant() {
 		return compteCourant;

@@ -40,9 +40,12 @@ public interface IBanqueWebService {
 	@Path("/clients/{id}/")
 	public Client deleteClient(Client c);
 
-	
-	//Conseiller	
+	// Conseiller
 	@POST
-	@Path("/conseiller/")
+	@Path("/conseillers/")
 	public void createConseiller(Conseiller c);
+
+	@GET
+	@Path("/conseillers/{id}/")
+	public Conseiller findConseillerById(@PathParam("id") String id);
 }
