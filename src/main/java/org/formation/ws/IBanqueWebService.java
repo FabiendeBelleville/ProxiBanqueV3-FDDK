@@ -10,6 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
 import org.formation.model.Client;
+import org.formation.model.Conseiller;
 
 @Path("/banque")
 public interface IBanqueWebService {
@@ -40,5 +41,8 @@ public interface IBanqueWebService {
 	public Client deleteClient(Client c);
 
 	
-	//yeah
+	//Conseiller	
+	@POST
+	@Path("/conseiller/")
+	public void createConseiller(Conseiller c);
 }

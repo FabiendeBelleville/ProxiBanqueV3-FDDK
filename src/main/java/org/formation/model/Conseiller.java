@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author Fabien & DIEA ; Elle correspond au model de fiche Conseiller
  *
  */
-//@XmlRootElement
-//@Entity
-//@Table(name = "conseiller")
+@XmlRootElement
+@Entity
+@Table(name = "conseiller")
 public class Conseiller {
 	// Attributs
 
@@ -29,8 +29,8 @@ public class Conseiller {
 	private String login;
 	private String password;
 	// One Conseiller To Many Clients
-//	@OneToMany(mappedBy = "conseiller", cascade = { CascadeType.PERSIST })
-//	Set<Client> clientsDuConseiller = new HashSet<>();
+	@OneToMany(mappedBy = "conseiller", cascade = { CascadeType.PERSIST })
+	Set<Client> clientsDuConseiller = new HashSet<>();
 
 	// Constructeur
 	public Conseiller() {

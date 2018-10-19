@@ -41,9 +41,9 @@ public class Client {
 	@JoinColumn(name = "id_cptE", unique = true)
 	CompteEpargne compteEpargne;
 
-//	@ManyToOne(cascade = { CascadeType.PERSIST })
-//	@JoinColumn(name = "id_conseiller")
-//	Conseiller conseiller;
+	@ManyToOne(cascade = { CascadeType.PERSIST })
+	@JoinColumn(name = "id_conseiller")
+	Conseiller conseiller;
 
 	public Client() {
 	}
