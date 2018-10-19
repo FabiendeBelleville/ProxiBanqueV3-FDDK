@@ -11,6 +11,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 /**
  * 
  * @author Fabien et Marlon. La classe Client est l'une des classe les plus
@@ -31,8 +33,7 @@ public class Client {
 	private String adresse;
 	private int codePostal;
 	private String ville;
-	
-	
+
 	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
 	@JoinColumn(name = "id_cptC", unique = true)
 	CompteCourant compteCourant;
@@ -120,6 +121,7 @@ public class Client {
 		this.ville = ville;
 	}
 
+	@JsonBackReference
 	public Conseiller getConseiller() {
 		return conseiller;
 	}
