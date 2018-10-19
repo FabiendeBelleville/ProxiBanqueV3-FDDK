@@ -39,8 +39,4 @@ public interface IBanqueWebService {
 	@Path("/clients/{id}/")
 	public Client deleteClient(Client c);
 	
-	//verbe supprimer client
-	
-	
-
 }
