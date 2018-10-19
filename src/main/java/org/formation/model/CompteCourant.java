@@ -32,12 +32,4 @@ public class CompteCourant extends Compte {
 		CompteCourant.decouvertAutoriseCC = decouvertAutoriseCC;
 	}
 
-//	public Client getClient() {
-//		return client;
-//	}
-//
-//	public void setClient(Client client) {
-//		this.client = client;
-//	}
-
 }

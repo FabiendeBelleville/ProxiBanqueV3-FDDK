@@ -38,5 +38,7 @@ public interface IBanqueWebService {
 	@DELETE
 	@Path("/clients/{id}/")
 	public Client deleteClient(Client c);
+
 	
+	//yeah
 }

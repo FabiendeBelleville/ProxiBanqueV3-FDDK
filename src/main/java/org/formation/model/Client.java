@@ -31,8 +31,6 @@ public class Client {
 	private String adresse;
 	private int codePostal;
 	private String ville;
-	private double firstDepotCC;
-	private double firstDepotCE;
 	
 	
 	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
@@ -61,8 +59,6 @@ public class Client {
 		this.adresse = adresse;
 		this.codePostal = cp;
 		this.ville = ville;
-		this.firstDepotCC = firstDepotCC;
-		this.firstDepotCE = firstDepotCE;
 		// this.conseiller = conseiller;
 	}
 
@@ -122,22 +118,6 @@ public class Client {
 
 	public void setVille(String ville) {
 		this.ville = ville;
-	}
-
-	public double getFirstDepotCC() {
-		return firstDepotCC;
-	}
-
-	public void setFirstDepotCC(double firstDepotCC) {
-		this.firstDepotCC = firstDepotCC;
-	}
-
-	public double getFirstDepotCE() {
-		return firstDepotCE;
-	}
-
-	public void setFirstDepotCE(double firstDepotCE) {
-		this.firstDepotCE = firstDepotCE;
 	}
 
 //	public Conseiller getConseiller() {

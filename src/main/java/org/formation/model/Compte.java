@@ -20,8 +20,6 @@ public class Compte {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-//metrte en unique
-	int numCpt;
 	private String dateOuverture;
 	private double solde;
 
@@ -41,14 +39,6 @@ public class Compte {
 		this.id = id;
 	}
 
-	public int getNumCpt() {
-		return numCpt;
-	}
-
-	public void setNumCpt(int numCpt) {
-		this.numCpt = numCpt;
-	}
-
 	public void setDateOuverture(String dateOuverture) {
 		this.dateOuverture = dateOuverture;
 	}
@@ -61,11 +51,6 @@ public class Compte {
 		this.solde = solde;
 	}
 
-	@Override
-	public String toString() {
-		return "Compte [id=" + id + ", numCpt=" + numCpt + ", dateOuverture=" + dateOuverture + ", solde=" + solde
-				+ ", getDateOuverture()=" + getDateOuverture() + ", getId()=" + getId() + ", getNumCpt()=" + getNumCpt()
-				+ ", getSolde()=" + getSolde() + "]";
-	}
+
 
 }
