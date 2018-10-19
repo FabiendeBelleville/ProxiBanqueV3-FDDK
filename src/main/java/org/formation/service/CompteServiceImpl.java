@@ -44,7 +44,10 @@ public class CompteServiceImpl implements ICompteService {
 
 	@Override
 	public void faireVirement(Compte emetteur, Compte destinataire, double montant) {
-
+		emetteur.setSolde(emetteur.getSolde() - montant);
+		destinataire.setSolde(destinataire.getSolde() + montant);
+		compteDao.save(emetteur);
+		compteDao.save(destinataire);
 	}
 
 }

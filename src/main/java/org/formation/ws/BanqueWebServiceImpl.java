@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 public class BanqueWebServiceImpl implements IBanqueWebService {
 	@Autowired
 	private IClientService clientService;
+	
+	@Autowired
 	private ICompteService compteService;
 
 	@Override
@@ -42,7 +44,8 @@ public class BanqueWebServiceImpl implements IBanqueWebService {
 
 	@Override
 	public void faireVirement(Integer emetteur, Integer destinataire, double montant) {
-
+		compteService.faireVirement(compteService.findCompteById(emetteur), compteService.findCompteById(destinataire),
+				montant);
 	}
 
 }

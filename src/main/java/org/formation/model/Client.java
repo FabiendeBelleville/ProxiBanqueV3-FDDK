@@ -33,14 +33,15 @@ public class Client {
 	private String ville;
 	private double firstDepotCC;
 	private double firstDepotCE;
-
+	
+	
 	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
 	@JoinColumn(name = "id_cptC", unique = true)
-	Compte compteCourant;
+	CompteCourant compteCourant;
 
 	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
 	@JoinColumn(name = "id_cptE", unique = true)
-	Compte compteEpargne;
+	CompteEpargne compteEpargne;
 
 //	@ManyToOne(cascade = { CascadeType.PERSIST })
 //	@JoinColumn(name = "id_conseiller")
@@ -62,7 +63,7 @@ public class Client {
 		this.ville = ville;
 		this.firstDepotCC = firstDepotCC;
 		this.firstDepotCE = firstDepotCE;
-	//	this.conseiller = conseiller;
+		// this.conseiller = conseiller;
 	}
 
 	public Client(Integer idClient, String nom, String prenom, String adresse, int cp, String ville) {
@@ -147,7 +148,7 @@ public class Client {
 //		this.conseiller = conseiller;
 //	}
 
-	public Compte getCompteCourant() {
+	public CompteCourant getCompteCourant() {
 		return compteCourant;
 	}
 
@@ -155,7 +156,7 @@ public class Client {
 		this.compteCourant = compteCourant;
 	}
 
-	public Compte getCompteEpargne() {
+	public CompteEpargne getCompteEpargne() {
 		return compteEpargne;
 	}
 
@@ -163,7 +164,4 @@ public class Client {
 		this.compteEpargne = compteEpargne;
 	}
 
-	
-
-	
 }

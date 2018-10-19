@@ -24,13 +24,13 @@ public class CompteEpargne extends Compte {
 	}
 
 	// Getters & Setters
-	public Client getClient() {
-		return client;
-	}
-
-	public void setClient(Client client) {
-		this.client = client;
-	}
+//	public Client getClient() {
+//		return client;
+//	}
+//
+//	public void setClient(Client client) {
+//		this.client = client;
+//	}
 
 	public double getTauxInteret() {
 		return tauxInteret;

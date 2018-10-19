@@ -7,6 +7,8 @@ import org.formation.model.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Service("clientService")
 public class ClientServiceImpl implements IClientService {
 	@Autowired
@@ -24,6 +26,7 @@ public class ClientServiceImpl implements IClientService {
 	}
 
 	@Override
+	@JsonIgnoreProperties("costMaterials")
 	public List<Client> findAll() {
 		return clientDao.findAll();
 	}
