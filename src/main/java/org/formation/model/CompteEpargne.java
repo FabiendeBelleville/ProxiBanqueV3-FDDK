@@ -6,8 +6,8 @@ import javax.persistence.Table;
 
 /**
  * 
- * @author Fabien & Marlon;Ceci est la classe Compte Epargne qui �tend la classe
- *         Compte;
+ * @author Fabien & Diea;Ceci est la classe Compte Epargne qui etend la classe
+ *         Compte; Elle contien un constructeur et l'attribut tauxInteret.
  *
  */
 @Entity

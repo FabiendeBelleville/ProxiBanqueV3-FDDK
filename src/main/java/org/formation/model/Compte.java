@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 /**
  * 
- * @author Fabien classe parente Compte
+ * @author Fabien et Diea classe parente Compte
  */
 @Entity
 @Table(name = "compte")

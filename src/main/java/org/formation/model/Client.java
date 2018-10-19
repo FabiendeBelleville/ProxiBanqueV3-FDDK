@@ -15,9 +15,9 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 
 /**
  * 
- * @author Fabien et Marlon. La classe Client est l'une des classe les plus
+ * @author Fabien et Diea. La classe Client est l'une des classe les plus
  *         importantes du package model par son nombre d'attributs, avec leurs
- *         getters et setters associ�s ainsi qu'une m�thode toString compl�te.
+ *         getters et setters.
  *         Elle correspond au model de fiche client.
  */
 @XmlRootElement

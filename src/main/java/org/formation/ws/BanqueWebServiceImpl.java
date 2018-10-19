@@ -10,6 +10,14 @@ import org.formation.service.IConseillerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 
+ * @author Diea et Fabien : BanqueWebServiceImpl implements IBanqueWebService :
+ *         les méthodes sont coddées pour accéder aux différents services. La
+ *         partie Web Service étant bien séparée, la place est prête pour la
+ *         mise en œuvre de la technologie JSP Servlet
+ *
+ */
 @Service("banqueWebService")
 public class BanqueWebServiceImpl implements IBanqueWebService {
 	@Autowired

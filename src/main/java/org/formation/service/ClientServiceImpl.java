@@ -9,6 +9,13 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * 
+ * @author Fabien et Diea ClientServiceImpl implements IClientService. ce sont
+ *         les méthodes qui permettent de traiter les données et d'appeler les
+ *         méthodes du DAO correspondant
+ *
+ */
 @Service("clientService")
 public class ClientServiceImpl implements IClientService {
 	@Autowired

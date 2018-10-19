@@ -7,6 +7,13 @@ import org.formation.model.Compte;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 
+ * @author Fabien et Diea CompteServiceImpl implements ICompteService. ce sont
+ *         les méthodes qui permettent de traiter les données et d'appeler les
+ *         méthodes du DAO correspondant
+ *
+ */
 @Service("compteService")
 public class CompteServiceImpl implements ICompteService {
 

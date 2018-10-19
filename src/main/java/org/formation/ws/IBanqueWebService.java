@@ -12,6 +12,15 @@ import javax.ws.rs.PathParam;
 import org.formation.model.Client;
 import org.formation.model.Conseiller;
 
+/**
+ * 
+ * @author Diea et Fabien : IBanqueWebService est l'interface de notre Web
+ *         Service. Cette interface contient la signature des différentes
+ *         méthodes disponibles. les méthodes sont coddées dans son
+ *         implémentation. La partie Web Service étant bien séparée, la place
+ *         est prête pour la mise en œuvre de la technologie JSP Servlet.
+ *
+ */
 @Path("/banque")
 public interface IBanqueWebService {
 

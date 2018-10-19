@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * 
- * @author Fabien & DIEA ; Elle correspond au model de fiche Conseiller
+ * @author Fabien & Diea ; Elle correspond au model de fiche Conseiller
  *
  */
 @XmlRootElement

@@ -12,15 +12,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+/**
+ * 
+ * @author Diea et Fabien : SimpleLayerJpaApplicationTests permet de tester
+ *         l'autowired. Il doit être vert avant d'aller plus loin dans le
+ *         développement
+ *
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SimpleLayerJpaApplicationTests {
 
 	@Autowired
 	private ClientDao clientDao;
-	
-	@Autowired
-	private CompteDao compteDao;
 
 	@Test
 	public void testClientService() {

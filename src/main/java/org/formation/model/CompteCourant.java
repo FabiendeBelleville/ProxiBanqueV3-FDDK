@@ -6,8 +6,8 @@ import javax.persistence.Table;
 
 /**
  * 
- * @author Fabien & Marlon;Ceci est la classe Compte Courant qui �tend la classe
- *         Compte; Elle d�tient un constructeur
+ * @author Fabien & Diea;Ceci est la classe Compte Courant qui etend la classe
+ *         Compte; Elle contient un constructeur
  */
 @Entity
 @Table(name = "comptecourant")
